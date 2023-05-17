@@ -15,7 +15,7 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = () => {
   return (
-    <div className='relative z-2 w-100% box-border pt-[2.4vw] pb-[2.4vw] pl-[4vw] pr-[4vw] pointer-events-auto border-solid border-black border-2'>
+    <div className='relative z-2 w-100% box-border pt-[2.4vw] pb-[2.4vw] pl-[4vw] pr-[4vw] pointer-events-auto '>
       <div className='relative flex w-100% box-border flex-start justify-start align-items-center'>
         <div className='flex flex-nowrap grow-1 shrink-0 basis-[67%] align-items-center'>
           <div className='grow-1 shrink-1'>
@@ -26,7 +26,7 @@ const Navbar: FC<NavbarProps> = () => {
                 </a>
               </div>
               <div className='mr-[2vw] whitespace-nowrap'>
-                <a href='/'>
+                <a href='../about/'>
                   About
                 </a>
               </div>
