@@ -2,9 +2,9 @@
 
 import { FC } from 'react'
 import '../globals.css'
-import { faEnvelope  } from '@fortawesome/free-solid-svg-icons'
+
 import { Instagram, MailOutlineOutlined, Twitter, FacebookOutlined  } from '@mui/icons-material';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 
@@ -36,7 +36,7 @@ const Navbar: FC<NavbarProps> = () => {
                 </a>
               </div>
               <div className='mr-[2vw] whitespace-nowrap'>
-                <a href='/'>
+                <a href='../Contact/'>
                   Contact
                 </a>
               </div>
