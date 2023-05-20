@@ -33,40 +33,42 @@ const Work: FC<WorkProps> = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-[4vw]" ref={containerRef}>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-[4vw]" ref={containerRef}>
       <div className="flex flex-col gap-5">
-        <img className="h-[846px] w-full fade-in" src="./Art1.png" alt="" />
-        <img className="h-[837px] w-full fade-in" src="./Art2.png" alt="" />
-        <img className="h-[586px] w-full fade-in" src="./Art1.png" alt="" />
-        <img className="h-[747px] w-full fade-in" src="./Art4.png" alt="" />
+        <img className="w-full fade-in" src="./Art1.png" alt="" />
+        <img className="w-full fade-in" src="./Art2.png" alt="" />
+        <img className="w-full fade-in" src="./Art1.png" alt="" />
+        <img className="w-full fade-in" src="./Art4.png" alt="" />
+        <img className="w-full fade-in" src="./Art12.png" alt="" />
       </div>
 
       <div className="flex flex-col gap-5">
-        <img className="h-[550px] w-full fade-in" src="./Art4.png" alt="" />
-        <img className="h-[261px] w-full fade-in" src="./Art5.png" alt="" />
-        <img className="h-[308px] w-full fade-in" src="./Art6.png" alt="" />
-        <img className="h-[261px] w-full fade-in" src="./Art5.png" alt="" />
-        <img className="h-[586px] w-full fade-in" src="./Art3.png" alt="" />
-        <img className="h-[751px] w-full fade-in" src="./Art7.png" alt="" />
+        <img className="w-full fade-in" src="./Art4.png" alt="" />
+        <img className="w-full fade-in" src="./Art5.png" alt="" />
+        <img className="w-full fade-in" src="./Art6.png" alt="" />
+        <img className="w-full fade-in" src="./Art5.png" alt="" />
+        <img className="w-full fade-in" src="./Art3.png" alt="" />
+        <img className="w-full fade-in" src="./Art7.png" alt="" />
       </div>
 
       <div className="flex flex-col gap-5">
-        <img className="h-[410px] w-full fade-in" src="./Art7.png" alt="" />
-        <img className="h-[289px] w-full fade-in" src="./Art8.png" alt="" />
-        <img className="h-[851px] w-full fade-in" src="./Art9.png" alt="" />
-        <img className="h-[329px] w-full fade-in" src="./Art12.png" alt="" />
-        <img className="h-[409px] w-full fade-in" src="./Art7.png" alt="" />
-        <img className="h-[585px] w-full fade-in" src="./Art5.png" alt="" />
+        <img className="w-full fade-in" src="./Art7.png" alt="" />
+        <img className="w-full fade-in" src="./Art8.png" alt="" />
+        <img className="w-full fade-in" src="./Art9.png" alt="" />
+        <img className="w-full fade-in" src="./Art12.png" alt="" />
+        <img className="w-full fade-in" src="./Art7.png" alt="" />
+      
       </div>
 
       <div className="flex flex-col gap-5">
-        <img className="h-[578px] w-full fade-in" src="./Art10.png" alt="" />
-        <img className="h-[412px] w-full fade-in" src="./Art11.png" alt="" />
-        <img className="h-[528px] w-full fade-in" src="./Art12.png" alt="" />
-        <img className="h-[295px] w-full fade-in" src="./Art6.png" alt="" />
-        <img className="h-[501px] w-full fade-in" src="./Art12.png" alt="" />
+        <img className="w-full fade-in" src="./Art10.png" alt="" />
+        <img className="w-full fade-in" src="./Art11.png" alt="" />
+        <img className="w-full fade-in" src="./Art12.png" alt="" />
+        <img className="w-full fade-in" src="./Art6.png" alt="" />
+        <img className="w-full fade-in" src="./Art12.png" alt="" />
       </div>
     </div>
+   
   );
 };
 
