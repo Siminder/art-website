@@ -1,19 +1,23 @@
+"use client"
 import { FC } from 'react';
 import Navbar from '../componets/Navbar';
 import Footer from '../componets/Footer';
 import Image from 'next/image';
+import { ThemeProvider } from 'next-themes';
+import '../globals.css'
 
 interface PageProps {}
 
 const Page: FC<PageProps> = ({}) => {
   return (
     <>
+       <ThemeProvider attribute="class">
       <Navbar />
       <div className='flex justify-center'>
         <div className='max-w-6xl w-full p-8'>
           <div className='grid grid-cols-1 md:grid-cols-12 gap-8'>
             <div className='md:col-span-5'>
-              <img className="h-full w-full object-cover" src="./Art1.png" alt="" />
+              <img className="h-full w-full object-cover" src="./Art1.jpg" alt="" />
             </div>
             <div className='md:col-span-7 flex flex-col justify-center'>
               <h2 className='text-4xl font-bold mb-6'>About the artist</h2>
@@ -44,7 +48,7 @@ const Page: FC<PageProps> = ({}) => {
             <div className='ml-0 md:ml-8'>
               <Image
                 className='w-[519px] h-[313px] object-cover'
-                src='/Art5.png'
+                src='/Art5.jpg'
                 alt='Community Image'
                 width={519}
                 height={313}
@@ -54,6 +58,7 @@ const Page: FC<PageProps> = ({}) => {
         </div>
       </div>
       <Footer />
+      </ThemeProvider>
     </>
   );
 };

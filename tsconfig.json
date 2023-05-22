@@ -8,6 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "types": ["react", "react-dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,

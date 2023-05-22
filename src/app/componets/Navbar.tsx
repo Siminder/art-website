@@ -1,11 +1,15 @@
 "use client"
 import { FC, useState } from 'react';
-import { Instagram, MailOutlineOutlined, Twitter, FacebookOutlined, Menu, Close } from '@mui/icons-material';
+import { Instagram, MailOutlineOutlined, Twitter, FacebookOutlined, Menu, Close, LightMode, DarkMode } from '@mui/icons-material';
+import { useTheme } from 'next-themes';
+import '../globals.css'
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === 'system' ? systemTheme : theme;
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -78,18 +82,29 @@ const Navbar: FC<NavbarProps> = () => {
         {/* Icons */}
         <div className='text-black justify-end flex-grow-0 flex-shrink-1 items-center ml-auto hidden md:flex'>
           <div className='m-0 flex text-center leading-1 space-x-[3rem]'>
-            <a href="/" className='relative block box-content leading-1'>
+            <a href="/"  className={`relative block box-content leading-1 ${currentTheme === 'dark' ? 'text-white' : ''}`}>
               <MailOutlineOutlined />
             </a>
-            <a href="https://www.instagram.com" className='relative block box-content leading-1'>
+            <a href="https://www.instagram.com" className={`relative block box-content leading-1 ${currentTheme === 'dark' ? 'text-white' : ''}`}>
               <Instagram />
             </a>
-            <a href="https://twitter.com" className='relative block box-content leading-1'>
+            <a href="https://twitter.com" className={`relative block box-content leading-1 ${currentTheme === 'dark' ? 'text-white' : ''}`}>
               <Twitter />
             </a>
-            <a href="https://www.facebook.com" className='relative block box-content leading-1'>
+            <a href="https://www.facebook.com" className={`relative block box-content leading-1 ${currentTheme === 'dark' ? 'text-white' : ''}`}>
               <FacebookOutlined />
             </a>
+            <div>
+                {currentTheme === "dark" ? (
+                  <LightMode 
+                  className='text-white cursor-pointer'
+                  onClick={() => setTheme('light')} />
+                ) : (
+                  <DarkMode 
+                  className=' cursor-pointer'
+                  onClick={() => setTheme('dark')} />
+                )}
+              </div>
           </div>
         </div>
       </div>

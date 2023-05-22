@@ -1,6 +1,9 @@
+"use client"
 import Navbar from "./componets/Navbar"
-import Work from "./componets/Work"
+import Work from "./componets/Gallery"
 import Footer from "./componets/Footer"
+import { ThemeProvider } from "next-themes"
+import './globals.css'
 
 
 
@@ -8,9 +11,11 @@ import Footer from "./componets/Footer"
 export default function Home() {
   return (
    <>
+      <ThemeProvider attribute="class">
      <Navbar/>
      <Work/>
      <Footer/>
+     </ThemeProvider>
    </>
   )
 }

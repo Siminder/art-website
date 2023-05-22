@@ -3,6 +3,8 @@ import { FC, useEffect, useState } from 'react';
 import Navbar from '../componets/Navbar';
 import Footer from '../componets/Footer';
 import { Instagram, Twitter, YouTube } from '@mui/icons-material';
+import { ThemeProvider } from 'next-themes';
+import '../globals.css'
 
 interface ContactProps {}
 
@@ -23,6 +25,7 @@ const Contact: FC<ContactProps> = ({}) => {
   }, []);
 
   return (
+    <ThemeProvider attribute="class">
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-grow">
@@ -70,7 +73,7 @@ const Contact: FC<ContactProps> = ({}) => {
               </div>
               <div className="relative">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <img className="w-full h-[336px] " src="/Art15.png" alt="Contact" />
+                  <img className="w-full h-[500px] " src="/Art5.jpg" alt="Contact" />
                 </div>
               </div>
             </div>
@@ -79,6 +82,7 @@ const Contact: FC<ContactProps> = ({}) => {
       </div>
       <Footer />
     </div>
+    </ThemeProvider>
   );
 };
 
