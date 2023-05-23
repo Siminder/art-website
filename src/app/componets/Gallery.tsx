@@ -7,6 +7,7 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = useState<number | null>(null);
   const [ref, inView] = useInView({ triggerOnce: true });
   const galleryRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   // Array of image URLs
   const images: string[] = [
@@ -51,6 +52,10 @@ const Gallery = () => {
   };
 
   useEffect(() => {
+    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
+  }, []);
+
+  useEffect(() => {
     if (inView) {
       const observer = new IntersectionObserver(
         (entries) => {
@@ -83,8 +88,6 @@ const Gallery = () => {
     700: 2,
     500: 1,
   };
-
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   return (
     <div className="masonry-grid" ref={galleryRef}>
