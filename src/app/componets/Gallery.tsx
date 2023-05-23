@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Masonry from 'react-masonry-css';
-import '../globals.css'
+import '../globals.css';
 
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState<number | null>(null);
@@ -30,19 +30,16 @@ const Gallery = () => {
     "./Art18.jpg",
     "./Art19.jpg",
     "./Art20.jpg",
-    // Add more ima
+    // Add more images
   ];
 
+  const openImage = (index: number) => {
+    setCurrentImage(index);
+  };
 
-const openImage = (index: number) => {
-  setCurrentImage(index);
-};
-
-const closeImage = () => {
-  setCurrentImage(null);
-};
-
-
+  const closeImage = () => {
+    setCurrentImage(null);
+  };
 
   const navigateImage = (direction: number) => {
     if (currentImage !== null) {
@@ -87,6 +84,8 @@ const closeImage = () => {
     500: 1,
   };
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
   return (
     <div className="masonry-grid" ref={galleryRef}>
       <Masonry
@@ -98,7 +97,7 @@ const closeImage = () => {
           <div
             key={index}
             className={`relative overflow-hidden image-container ${index < 4 && 'fade-in'}`}
-            onClick={() => openImage(index)}
+            onClick={isMobile ? undefined : () => openImage(index)}
             ref={index === 3 ? ref : undefined}
           >
             <img
