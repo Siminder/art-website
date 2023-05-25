@@ -56,14 +56,14 @@ const Contact: FC<ContactProps> = ({}) => {
                     </ul>
                     : '(contact for commission or whatever u want it to say) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque nec odio pellentesque tristique. Ut fringilla, sem in tincidunt luctus, nulla leo euismod arcu, eget maximus magna metus vel ligula.'}
                 </p>
-                <p className="mb-4">Phone: (if u want to)</p>
+                <p className="mb-4">Discord: Kayl The Snail#5507  </p>
                 <p className="mb-4">Email: example@example.com</p>
                 <p>Social Media :</p>
                 <div className="flex items-center space-x-2 sm:space-x-4 pt-1">
-                  <a href="https://www.instagram.com" className="">
+                  <a href="https://www.instagram.com/kaylsthesnail/" className="">
                     <Instagram />
                   </a>
-                  <a href="https://twitter.com" className="">
+                  <a href="https://twitter.com/SnailKayl" className="">
                     <Twitter />
                   </a>
                   <a href="https://www.youtube.com" className="">

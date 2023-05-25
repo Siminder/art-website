@@ -24,13 +24,13 @@ const Page: FC<PageProps> = ({}) => {
               <p className='text-sm mb-6'>Birthday</p>
               <p className='text-sm mb-6'>She/her</p>
               <p className='text-lg mb-6'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor ullamcorper justo, et lobortis massa efficitur id. Sed vehicula consequat malesuada. Nulla facilisi. Mauris auctor nibh id augue maximus interdum.
+              I was born and raised in colorado. I have been doing oil and acrylic painting for about 7 years now. Art has always helped relax and sooth my anxieties.. I live with my cat in Denver and paint in my spare time.
               </p>
               <p className='text-lg mb-6'>
-                Donec gravida lorem sit amet neque consequat, vitae congue neque tempor. Sed eget fringilla ex, vel bibendum eros. Nam euismod, urna id auctor eleifend, elit ligula aliquet lacus, at placerat mauris dolor non odio.
+              -------------------------------
               </p>
               <p className='text-lg'>
-                Ut vel nisl consectetur, ullamcorper nunc in, posuere orci. Donec volutpat ex eget ultricies tincidunt. Nulla facilisi. Proin nec mi tincidunt, posuere est ut, fringilla ligula. Nam facilisis, mi id tincidunt volutpat, sem erat fringilla neque, id facilisis odio lorem at risus.
+              -------------------------------
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Page: FC<PageProps> = ({}) => {
             <div className='flex flex-col justify-center mb-8 md:mb-0'>
               <h3 className='text-2xl font-bold mb-6'>Join Our Community</h3>
               <p className='text-lg mt-0'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor ullamcorper justo, et lobortis massa efficitur id.
+              Be part of our creative community and stay connected with fellow artists, art lovers.
               </p>
               <a href="https://discord.com/app" className="mt-4 px-8 py-4 text-base font-semibold text-black uppercase bg-transparent hover:bg-black hover:text-white rounded-full transition-colors duration-200 flex items-center justify-center border-2 border-black">
                 Join Now

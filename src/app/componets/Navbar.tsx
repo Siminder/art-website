@@ -3,6 +3,7 @@ import { FC, useState } from 'react';
 import { Instagram, MailOutlineOutlined, Twitter, FacebookOutlined, Menu, Close, LightMode, DarkMode } from '@mui/icons-material';
 import { useTheme } from 'next-themes';
 import '../globals.css'
+import Image from 'next/image';
 
 interface NavbarProps {}
 
@@ -20,8 +21,8 @@ const Navbar: FC<NavbarProps> = () => {
       <div className="relative flex w-full box-border flex-start justify-between items-center">
         <div className="flex flex-nowrap grow-1 shrink-0 basis-[67%] align-items-center">
           <div className="grow-1 shrink-1">
-            <nav className="flex-wrap hidden md:flex">
-              <div className="mr-[2vw] whitespace-nowrap">
+            <nav className="flex-wrap hidden md:flex mt-[2vw]">
+              <div className="mr-[2vw] m,t- whitespace-nowrap">
                 <a href="/">Works</a>
               </div>
               <div className="mr-[2vw] whitespace-nowrap">
@@ -41,7 +42,12 @@ const Navbar: FC<NavbarProps> = () => {
             <div className="w-auto text-0">
               <div className="text-center">
                 <a href="/" className="flex justify-center ml-[10rem]">
-                  Logo
+                  <Image
+                  src="/logo.jpg"
+                  width={100}
+                  height={100}
+                  alt='logo'
+                  />
                 </a>
               </div>
             </div>
@@ -53,7 +59,7 @@ const Navbar: FC<NavbarProps> = () => {
           <Menu />
         </button>
         <p className={`absolute top-0 left-0 md:hidden ${isMenuOpen ? 'z-0' : 'z-10'}`}>
-          logo
+          <img src='./logo.jpg' className='w-5 h-5'/>
         </p>
 
         {/* Dropdown Menu */}
