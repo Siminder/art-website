@@ -43,9 +43,9 @@ const Navbar: FC<NavbarProps> = () => {
               <div className="text-center">
                 <a href="/" className="flex justify-center ml-[10rem]">
                   <Image
-                  src="/logo.jpg"
-                  width={100}
-                  height={100}
+                  src="/logo2.jpg"
+                  width={120}
+                  height={120}
                   alt='logo'
                   />
                 </a>
@@ -59,7 +59,7 @@ const Navbar: FC<NavbarProps> = () => {
           <Menu />
         </button>
         <p className={`absolute top-0 left-0 md:hidden ${isMenuOpen ? 'z-0' : 'z-10'}`}>
-          <img src='./logo.jpg' className='w-5 h-5'/>
+          <img src='./logo2.jpg' className='w-5 h-5'/>
         </p>
 
         {/* Dropdown Menu */}
