@@ -41,7 +41,7 @@ const Page: FC<PageProps> = ({}) => {
               <p className='text-lg mt-0'>
               Be part of our creative community and stay connected with fellow artists, art lovers.
               </p>
-              <a href="https://discord.com/app" className="mt-4 px-8 py-4 text-base font-semibold text-black uppercase bg-transparent hover:bg-black hover:text-white rounded-full transition-colors duration-200 flex items-center justify-center border-2 border-black">
+              <a href="https://discord.gg/FJcfrHsR" className="mt-4 px-8 py-4 text-base font-semibold text-black uppercase bg-transparent hover:bg-black hover:text-white rounded-full transition-colors duration-200 flex items-center justify-center border-2 border-black">
                 Join Now
               </a>
             </div>
