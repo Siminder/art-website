@@ -54,7 +54,7 @@ const Contact: FC<ContactProps> = ({}) => {
                           <a>Other</a>
                         </li>
                     </ul>
-                    : '(contact for commission or whatever u want it to say) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque nec odio pellentesque tristique. Ut fringilla, sem in tincidunt luctus, nulla leo euismod arcu, eget maximus magna metus vel ligula.'}
+                    : "I would love to hear from you! If you have any questions, commission, or would like to discuss a potential collaboration, please don't hesitate to reach out. "}
                 </p>
                 <p className="mb-4">Discord: Kayl The Snail#5507  </p>
                 <p className="mb-4">Email: example@example.com</p>
